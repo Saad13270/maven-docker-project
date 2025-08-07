@@ -1,5 +1,5 @@
 FROM tomcat:9-jdk17
-COPY target/java-maven-app.war /usr/local/tomcat/webapps/java-maven-app.war
+COPY java-maven-app-1.0-SNAPSHOT /usr/local/tomcat/webapps/
 RUN mkdir /app && touch /app/submissions.csv
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
